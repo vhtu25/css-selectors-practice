@@ -1,0 +1,66 @@
+/* 1. Element Selector (Chọn theo thẻ body): Đổi màu nền của trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+/* 2. Class Selector (Chọn theo class .main-title): Căn giữa và đổi màu tiêu đề <h1> */
+.main-title {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Định dạng đoạn văn */
+.intro-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* 3. Grouping Selector & Element Selector: Định dạng danh sách sở thích */
+ul.hobby-list {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+/* Định dạng màu sắc riêng cho từng mục trong danh sách */
+.hobby-list li:nth-child(1) {
+    color: #e74c3c; /* Màu đỏ */
+}
+
+.hobby-list li:nth-child(2) {
+    color: #3498db; /* Màu xanh dương */
+}
+
+.hobby-list li:nth-child(3) {
+    color: #27ae60; /* Màu xanh lá */
+}
+
+/* 4. Element Selector kết hợp Pseudo-classes (:hover) cho nút bấm */
+button.btn-click {
+    display: block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng khi rê chuột vào nút */
+button.btn-click:hover {
+    background-color: #45a049;
+}
